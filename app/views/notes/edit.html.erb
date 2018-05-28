@@ -1,0 +1,12 @@
+<h1 class="pagetitle">Edit Note</h1>
+<div class="input">
+<%= form_for @note do |f| %>
+<%= f.label :title %>
+<%= f.text_field :title %>
+
+<%= f.label :msg %>
+<%= f.text_area :msg %>
+
+<% f.submit %>
+<% end %>
+</div>

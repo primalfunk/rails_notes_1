@@ -1,0 +1,9 @@
+<h1 class="pagetitle">Notes Index</h1>
+<%= link_to "Create a New Note", new_note_path %>
+<div class="noteslist">
+<% @notes.each do |note| %>
+<%= note.title %>
+<%= link_to "Show", note_path(note) %>
+<%= link_to "Edit", edit_note_path(note) %>
+<%= link_to "Delete", note, method: :delete %>
+<% end %>
